@@ -1,4 +1,4 @@
-<?php include_once './header.php'; ?>
+<?php require_once './inc/header.php'; ?>
     
 <div class="container">
     <header>
@@ -7,14 +7,16 @@
     <div class="content">
         <div class="todo-container">
             <h1>La todo</h1>
-            <div class="todo-form"></div>
+            <form action="/" method="POST" class="todo-form">
+                <input type="text" name="" id="">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </form>
+     
             <div class="todo-list"></div>
         </div>
     </div><!-- content-->
     
-    <footer>
-    &copy; Tous droits réservés
-    </footer>
-</div> <!--container-->
+    <?php require_once './inc/footer.php'; ?>
+    </div> <!--container-->
 </body>
 </html>
